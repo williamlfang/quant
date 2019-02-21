@@ -1,5 +1,7 @@
 # Summary
 
+A tiny book for quant.
+
 ## Stat
 * [Probability](stat/prob.md)
 * [EDA](stat/eda.md)
