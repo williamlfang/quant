@@ -1,9 +1,5 @@
 # Summary
 
-## Math
-* [Introduction](README.md)
-* [Introduction](math/readme.md)
-
 ## Stat
 * [Probability](stat/prob.md)
 * [EDA](stat/eda.md)
