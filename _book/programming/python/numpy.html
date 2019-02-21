@@ -1,14 +1,14 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Numpy · GitBook</title>
+        <title>Numpy · Survival Guide for Quant</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="William Fang">
         
         
     
@@ -17,17 +17,45 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-callouts/plugin.css">
                 
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
         
 
     
@@ -47,6 +75,7 @@
     
 
         
+    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -63,6 +92,17 @@
     <link rel="prev" href="why-python.html" />
     
 
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"repo":"quant","count":true,"type":"star","user":"williamlfang","size":"small"},{"count":false,"width":"140","type":"follow","user":"williamlfang","size":"small"}]};
+    </script>
+
     </head>
     <body>
         
@@ -71,7 +111,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -82,7 +122,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://williamlfang.github.io" target="_blank" class="custom-link">主页</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -95,6 +144,8 @@
             
                 <a href="../../">
             
+                    
+                        <b>1.1.</b>
                     
                     Introduction
             
@@ -109,6 +160,8 @@
                 <a href="../../stat/prob.html">
             
                     
+                        <b>1.2.</b>
+                    
                     Probability
             
                 </a>
@@ -117,12 +170,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../../stat/data-analysis.md">
+        <li class="chapter " data-level="1.3" data-path="../../stat/data-science.md">
             
                 <span>
             
                     
-                    Data Analysis
+                        <b>1.3.</b>
+                    
+                    Data Science
             
                 </a>
             
@@ -142,6 +197,8 @@
                 <a href="../linux/cli.html">
             
                     
+                        <b>2.1.</b>
+                    
                     Linux
             
                 </a>
@@ -156,6 +213,8 @@
                 <a href="../linux/ubuntu.html">
             
                     
+                        <b>2.1.1.</b>
+                    
                     Ubuntu
             
                 </a>
@@ -168,6 +227,8 @@
             
                 <a href="../linux/centos.html">
             
+                    
+                        <b>2.1.2.</b>
                     
                     CentOS
             
@@ -187,6 +248,8 @@
                 <a href="../c/why-c.html">
             
                     
+                        <b>2.2.</b>
+                    
                     C
             
                 </a>
@@ -200,6 +263,8 @@
             
                 <a href="../c/pointer.html">
             
+                    
+                        <b>2.2.1.</b>
                     
                     Pointer
             
@@ -219,6 +284,8 @@
                 <a href="../c++/why-c++.html">
             
                     
+                        <b>2.3.</b>
+                    
                     C++
             
                 </a>
@@ -232,6 +299,8 @@
             
                 <a href="../c++/class.html">
             
+                    
+                        <b>2.3.1.</b>
                     
                     Class
             
@@ -251,6 +320,8 @@
                 <a href="why-python.html">
             
                     
+                        <b>2.4.</b>
+                    
                     Python
             
                 </a>
@@ -265,6 +336,8 @@
                 <a href="numpy.html">
             
                     
+                        <b>2.4.1.</b>
+                    
                     Numpy
             
                 </a>
@@ -277,6 +350,8 @@
             
                 <a href="pandas.html">
             
+                    
+                        <b>2.4.2.</b>
                     
                     Pandas
             
@@ -296,6 +371,8 @@
                 <a href="../r/why-r.html">
             
                     
+                        <b>2.5.</b>
+                    
                     R
             
                 </a>
@@ -309,6 +386,8 @@
             
                 <a href="../r/data.table.html">
             
+                    
+                        <b>2.5.1.</b>
                     
                     data.table
             
@@ -330,7 +409,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -363,13 +442,15 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="numpy">Numpy</h1>
-
+<footer class="page-footer"><span class="copyright">williamlfang&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">&#x77E5;&#x8BC6;&#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB;4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03;<br> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-02-21 22:50:06
+</span></footer>
                                 
                                 </section>
                             
@@ -412,7 +493,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Numpy","level":"2.4.1","depth":2,"next":{"title":"Pandas","level":"2.4.2","depth":2,"path":"programming/python/pandas.md","ref":"programming/python/pandas.md","articles":[]},"previous":{"title":"Python","level":"2.4","depth":1,"path":"programming/python/why-python.md","ref":"programming/python/why-python.md","articles":[{"title":"Numpy","level":"2.4.1","depth":2,"path":"programming/python/numpy.md","ref":"programming/python/numpy.md","articles":[]},{"title":"Pandas","level":"2.4.2","depth":2,"path":"programming/python/pandas.md","ref":"programming/python/pandas.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"programming/python/numpy.md","mtime":"2019-02-21T06:12:32.677Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-21T11:51:15.374Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Numpy","level":"2.4.1","depth":2,"next":{"title":"Pandas","level":"2.4.2","depth":2,"path":"programming/python/pandas.md","ref":"programming/python/pandas.md","articles":[]},"previous":{"title":"Python","level":"2.4","depth":1,"path":"programming/python/why-python.md","ref":"programming/python/why-python.md","articles":[{"title":"Numpy","level":"2.4.1","depth":2,"path":"programming/python/numpy.md","ref":"programming/python/numpy.md","articles":[]},{"title":"Pandas","level":"2.4.2","depth":2,"path":"programming/python/pandas.md","ref":"programming/python/pandas.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","-lunr","-search","search-plus","disqus","-highlight","prism","prism-themes","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","donate","sitemap-general","copy-code-button","callouts","toolbar-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss","copyright":"williamlfang，使用<a href='https://creativecommons.org/licenses/by-sa/4.0/deed.zh'>知识署名-相同方式共享4.0协议</a>发布<br>"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"disqus":{"useIdentifier":false,"shortName":"williamlfang"},"callouts":{"showTypeInHeader":false},"toolbar-button":{"label":"PDF","url":"","icon":"fa-file-pdf-o"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://williamlfang.github.io/images/reward/alipay.png","alipayText":"支付宝请客","button":"喝咖啡","title":"","wechat":"https://williamlfang.github.io/images/reward/wechat.png","wechatText":"微信请客"},"sitemap-general":{"prefix":"https://williamlfang.gitbook.io/quant"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"github-buttons":{"buttons":[{"repo":"quant","count":true,"type":"star","user":"williamlfang","size":"small"},{"count":false,"width":"140","type":"follow","user":"williamlfang","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["douban","google","instapaper","line","linkedin","messenger","pocket","qq","viber","whatsapp"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"William Fang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":10,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Survival Guide for Quant","language":"zh-hans","links":{"sidebar":{"主页":"http://williamlfang.github.io"}},"gitbook":"3.2.3","description":"宽客生存指南"},"file":{"path":"programming/python/numpy.md","mtime":"2019-02-21T14:50:06.083Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-21T16:02:56.824Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -422,27 +503,55 @@
     <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toolbar-button/plugin.js"></script>
         
     
         
         <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
 

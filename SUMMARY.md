@@ -1,10 +1,8 @@
 # Summary
 
-A tiny book for quant.
-
 ## Stat
 * [Probability](stat/prob.md)
-* [Data Analysis](stat/data-analysis.md)
+* [Data Science](stat/data-science.md)
 
 ## Programming
 * [Linux](programming/linux/cli.md)

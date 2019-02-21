@@ -1,0 +1,135 @@
+{
+  "author": "William Fang", 
+  "title": "Survival Guide for Quant", 
+  "gitbook": "3.2.3", 
+  "language": "zh-hans", 
+  "description": "宽客生存指南", 
+  "links": {
+    "sidebar": {
+      "主页": "http://williamlfang.github.io"
+    }
+  }, 
+  "plugins": [
+    "theme-comscore", 
+    "-lunr", 
+    "-search", 
+    "search-plus", 
+    "disqus", 
+    "-highlight", 
+    "prism", 
+    "prism-themes", 
+    "github-buttons", 
+    "splitter", 
+    "-sharing", 
+    "sharing-plus", 
+    "tbfed-pagefooter", 
+    "expandable-chapters-small", 
+    "donate", 
+    "sitemap-general", 
+    "copy-code-button", 
+    "callouts", 
+    "toolbar-button"
+  ], 
+  "pluginsConfig": {
+    "fontsettings": {
+        "theme": "sepia"
+    },
+    "toolbar-button": {
+      "url": "", 
+      "icon": "fa-file-pdf-o", 
+      "label": "PDF"
+    }, 
+    "sitemap-general": {
+      "prefix": "https://williamlfang.gitbook.io/quant"
+    }, 
+    "sharing": {
+      "qq": false, 
+      "douban": false, 
+      "all": [
+        "douban", 
+        "google", 
+        "instapaper", 
+        "line", 
+        "linkedin", 
+        "messenger", 
+        "pocket", 
+        "qq", 
+        "viber", 
+        "whatsapp"
+      ], 
+      "google": false, 
+      "stumbleupon": false, 
+      "hatenaBookmark": false, 
+      "twitter": true, 
+      "vk": false, 
+      "linkedin": false, 
+      "instapaper": false, 
+      "pocket": false, 
+      "weibo": false, 
+      "viber": false, 
+      "facebook": true, 
+      "messenger": false, 
+      "line": false, 
+      "whatsapp": false
+    }, 
+    "tbfed-pagefooter": {
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss",  
+      "copyright": "williamlfang，使用<a href='https://creativecommons.org/licenses/by-sa/4.0/deed.zh'>知识署名-相同方式共享4.0协议</a>发布<br>"
+    }, 
+    "github-buttons": {
+      "buttons": [
+        {
+          "repo": "quant", 
+          "count": true, 
+          "type": "star", 
+          "user": "williamlfang", 
+          "size": "small"
+        }, 
+        {
+          "count": false, 
+          "width": "140", 
+          "type": "follow", 
+          "user": "williamlfang", 
+          "size": "small"
+        }
+      ]
+    }, 
+    "disqus": {
+      "shortName": "williamlfang"
+    }, 
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-atom-dark.css"
+      ]
+    }, 
+    "theme-default": {
+      "showLevel": true
+    }, 
+    "donate": {
+      "alipay": "https://williamlfang.github.io/images/reward/alipay.png", 
+      "title": "", 
+      "alipayText": "支付宝请客", 
+      "button": "喝咖啡", 
+      "wechatText": "微信请客", 
+      "wechat": "https://williamlfang.github.io/images/reward/wechat.png"
+    }, 
+    "callouts": {
+      "showTypeInHeader": false
+    }
+  }, 
+  "pdf": {
+      "fontSize": 10,
+      "footerTemplate": null,
+      "headerTemplate": null,
+      "margin": {
+          "bottom": 36,
+          "left": 62,
+          "right": 62,
+          "top": 36
+      },
+      "pageNumbers": false,
+      "paperSize": "a4"
+  },
+  "root": "."
+}
