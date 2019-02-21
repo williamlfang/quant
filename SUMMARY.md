@@ -4,7 +4,7 @@ A tiny book for quant.
 
 ## Stat
 * [Probability](stat/prob.md)
-* [EDA](stat/eda.md)
+* [Data Analysis](stat/data-analysis.md)
 
 ## Programming
 * [Linux](programming/linux/cli.md)
