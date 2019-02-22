@@ -10,6 +10,7 @@
 * [Linux](programming/linux/cli.md)
     * [Ubuntu](programming/linux/ubuntu.md)
     * [CentOS](programming/linux/centos.md)
+        * [CentOS7-系统配置](programming/linux/CentOS7-系统配置.md)
 * [C](programming/c/why-c.md)
     * [Pointer](programming/c/pointer.md)
 * [C++](programming/c++/why-c++.md)
