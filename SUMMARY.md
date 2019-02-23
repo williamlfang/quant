@@ -12,6 +12,7 @@
     * [CentOS](programming/linux/centos.md)
         * [CentOS7-系统配置](programming/linux/CentOS7-系统配置.md)
 * [C](programming/c/why-c.md)
+    * [K&R]()(programming/c/K&R.md)
     * [Pointer](programming/c/pointer.md)
 * [C++](programming/c++/why-c++.md)
     * [Class](programming/c++/class.md)
