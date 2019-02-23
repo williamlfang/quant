@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CentOS · Survival Guide for Quant</title>
+        <title>K&R · Survival Guide for Quant</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -86,10 +86,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="CentOS7-系统配置.html" />
+    <link rel="next" href="pointer.html" />
     
     
-    <link rel="prev" href="ubuntu.html" />
+    <link rel="prev" href="why-c.html" />
     
 
     <style>
@@ -199,9 +199,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="cli.html">
+        <li class="chapter " data-level="3.1" data-path="../linux/cli.html">
             
-                <a href="cli.html">
+                <a href="../linux/cli.html">
             
                     
                         <b>3.1.</b>
@@ -215,9 +215,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="ubuntu.html">
+        <li class="chapter " data-level="3.1.1" data-path="../linux/ubuntu.html">
             
-                <a href="ubuntu.html">
+                <a href="../linux/ubuntu.html">
             
                     
                         <b>3.1.1.</b>
@@ -230,9 +230,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.2" data-path="centos.html">
+        <li class="chapter " data-level="3.1.2" data-path="../linux/centos.html">
             
-                <a href="centos.html">
+                <a href="../linux/centos.html">
             
                     
                         <b>3.1.2.</b>
@@ -246,9 +246,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.2.1" data-path="CentOS7-系统配置.html">
+        <li class="chapter " data-level="3.1.2.1" data-path="../linux/CentOS7-系统配置.html">
             
-                <a href="CentOS7-系统配置.html">
+                <a href="../linux/CentOS7-系统配置.html">
             
                     
                         <b>3.1.2.1.</b>
@@ -271,9 +271,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../c/why-c.html">
+        <li class="chapter " data-level="3.2" data-path="why-c.html">
             
-                <a href="../c/why-c.html">
+                <a href="why-c.html">
             
                     
                         <b>3.2.</b>
@@ -287,9 +287,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.2.1" data-path="../c/K&R.html">
+        <li class="chapter active" data-level="3.2.1" data-path="K&R.html">
             
-                <a href="../c/K&R.html">
+                <a href="K&R.html">
             
                     
                         <b>3.2.1.</b>
@@ -302,9 +302,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.2" data-path="../c/pointer.html">
+        <li class="chapter " data-level="3.2.2" data-path="pointer.html">
             
-                <a href="../c/pointer.html">
+                <a href="pointer.html">
             
                     
                         <b>3.2.2.</b>
@@ -475,7 +475,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >CentOS</a>
+        <a href="../.." >K&R</a>
     </h1>
 </div>
 
@@ -490,9 +490,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="centos">CentOS</h1>
+                                <h1 id="kr-the-c-programming-language">K&amp;R: The C Programming Language</h1>
+<p>&#x201C;The C Programming Language&#x201D; &#x662F;&#x8BA1;&#x7B97;&#x673A;&#x7F16;&#x7A0B;&#x7684;&#x7ECF;&#x5178;&#x4E4B;&#x4F5C;&#xFF0C;&#x522B;&#x540D; <code>K&amp;R</code>&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x672C;&#x7B80;&#x77ED;&#x7CBE;&#x608D;&#x7684;&#x4E66;&#x7C4D;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E86; <code>C</code> &#x8BED;&#x8A00;&#x7684;&#x7F16;&#x7A0B;&#x6838;&#x5FC3;&#x3001;ANSI &#x89C4;&#x8303;&#x3001;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x7B49;&#x8BF8;&#x591A;&#x65B9;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x73B0;&#x5728;&#x5F88;&#x96BE;&#x60F3;&#x8C61;&#x8FD9;&#x672C;&#x4E0D;&#x8DB3; 200 &#x9875;&#x7684;&#x5C0F;&#x4E66;&#x5C3D;&#x7136;&#x80FD;&#x591F;&#x653E;&#x5F97;&#x4E0B;&#x8FD9;&#x4E48;&#x591A;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x63D0;&#x7EB2;&#x6308;&#x9886;&#x3001;&#x8A00;&#x7B80;&#x610F;&#x5793;&#x3002;&#x5C24;&#x5176;&#x662F;&#x9644;&#x5F55;A&#x90E8;&#x5206;&#xFF0C;&#x53EA;&#x662F;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x4E86; <code>C</code> &#x7684;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#xFF0C;&#x533A;&#x533A;&#x51E0;&#x9875;&#x7EB8;&#x5F20;&#x5C31;&#x8DB3;&#x4EE5;&#x4E3A;&#x540E;&#x4EBA;&#x7F16;&#x5199;&#x5404;&#x5F0F;&#x4E0D;&#x540C;&#x7684;&#x7F16;&#x8BD1;&#x5668;&#x63D0;&#x4F9B;&#x6307;&#x5F15;&#x3002;</p>
+<p>&#x6839;&#x636E;&#x6211;&#x5BFE;&#x672C;&#x4E66;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x628A;&#x6574;&#x672C;&#x4E66;&#x7C4D;&#x5206;&#x6210;&#x56DB;&#x90E8;&#x5206;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#xFF1A;&#x7B80;&#x5355;&#x4ECB;&#x7ECD; <code>C</code>&#xFF0C;&#x91CD;&#x70B9;&#x5728;&#x4E8E;&#x8BF4;&#x660E;&#x4E3A;&#x4F55;&#x8981;&#x628A; <code>C</code> &#x8BBE;&#x8BA1;&#x6210;&#x5982;&#x6B64;&#x7B80;&#x8981;&#x3002;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x662F;&#x53D7;&#x5230;&#x5F53;&#x65F6;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x786C;&#x4EF6;&#x6761;&#x4EF6;&#x9650;&#x5236;&#xFF0C;&#x6700;&#x65E9; K.Tompson &#x548C; D.Richie &#x662F;&#x5728; PDP-7&#x3001;PDP-11 &#x4E0A;&#x9762;&#x5B9E;&#x73B0;&#x4E86; Unix &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x51B3;&#x5B9A;&#x8BBE;&#x8BA1;&#x4E00;&#x6B3E;&#x4E0E;&#x8FD9;&#x4E2A; Unix &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x914D;&#x5957;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x8FD9;&#x5FC5;&#x8981;&#x8981;&#x6C42;&#x65B0;&#x8BED;&#x8A00;&#x4E00;&#x5B9A;&#x8981;&#x8DB3;&#x591F;&#x7CBE;&#x7B80;&#x4EE5;&#x9002;&#x5E94;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5BFE;&#x6027;&#x80FD;&#x7684;&#x6781;&#x81F4;&#x8981;&#x6C42;&#xFF1B;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x300C;&#x5C0F;&#x800C;&#x7F8E;&#x300D;&#x662F;&#x5F53;&#x65F6;&#x5B66;&#x672F;&#x9886;&#x57DF;&#x7684;&#x4E00;&#x4E2A;&#x666E;&#x904D;&#x8BA4;&#x53EF;&#x7684;&#x89C2;&#x5FF5;&#xFF0C;&#x5373;&#x6839;&#x636E;&#x300C;&#x5965;&#x5361;&#x59C6;&#x300D;&#x5B9A;&#x5F8B;&#xFF1A;&#x5982;&#x65E0;&#x5FC5;&#x8981;&#xFF0C;&#x8BF7;&#x52FF;&#x589E;&#x6DFB;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x770B;&#x5F97;&#xFF0C;<code>C</code> &#x8BED;&#x8A00;&#x6700;&#x6838;&#x5FC3;&#x7684;&#x5185;&#x5BB9;&#x5176;&#x5B9E;&#x5F88;&#x5C11;&#xFF0C;&#x5173;&#x952E;&#x8BCD;&#x4E0D;&#x5230; 30 &#x4E2A;&#xFF0C;&#x90FD;&#x662F;&#x57FA;&#x672C;&#x4E0A;&#x8FBE;&#x5230;&#x4E86;&#x9AD8;&#x7EA7;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x80FD;&#x591F;&#x89E6;&#x6478;&#x7684;&#x300C;&#x5E95;&#x5C42;&#x5730;&#x677F;&#x300D;&#xFF0C;&#x4F46;&#x901A;&#x8FC7;&#x4E00;&#x5B9A;&#x7684;&#x8BBE;&#x8BA1;&#x4E4B;&#x540E;&#xFF0C;&#x7531;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x7EC4;&#x6210;&#x7684;&#x7A0B;&#x5E8F;&#x5374;&#x53C8;&#x6709;&#x7740;&#x5F3A;&#x5927;&#x7684;&#x80FD;&#x591F;&#xFF0C;&#x65E2;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x5BFE;&#x5E95;&#x5C42;&#x786C;&#x4EF6;&#xFF08;&#x6307;&#x9488;&#x662F; <code>C</code> &#x8BED;&#x8A00;&#x7684;&#x6838;&#x5FC3;&#xFF0C;&#x5373;&#x53D8;&#x91CF;&#x5728;&#x5185;&#x5B58;&#x7684;&#x5730;&#x5740;&#xFF09;&#x7684;&#x76F4;&#x63A5;&#x64CD;&#x63A7;&#xFF0C;&#x53C8;&#x80FD;&#x63D0;&#x4F9B;&#x7B80;&#x6D01;&#x660E;&#x786E;&#x7684;&#x903B;&#x8F91;&#x8303;&#x5F0F;&#x3002;<ul>
+<li>Chapter 0: Introduction<ul>
+<li>C is a general-purpose programming language&#x3002;<code>C</code> &#x662F;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x65E2;&#x80FD;&#x591F;&#x7528;&#x4E8E;&#x7F16;&#x5199;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8FD9;&#x7C7B;&#x9AD8;&#x96BE;&#x5EA6;&#x7684;&#x300C;&#x7A0B;&#x5E8F;&#x300D;&#xFF0C;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957;&#x5F00;&#x53D1;&#x9AD8;&#x7EA7;&#x7A0B;&#x5E8F;&#x7684;&#x5DE5;&#x5177;&#x3002;</li>
+</ul>
+</li>
+<li>Chapter 1: A Tutorial Introduction</li>
+</ul>
+</li>
+<li>&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF1A;&#x4ECB;&#x7ECD; <code>C</code> &#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x6838;&#x5FC3;&#x3002;<ul>
+<li>Chapter 2: Type, Operators, and Expression</li>
+<li>Chapter 3: Control Flow</li>
+<li>Chapter 4: Functions and Program Structure</li>
+<li>Chapter 5: Pointers and Arrays</li>
+<li>Chapter 6 Structures</li>
+</ul>
+</li>
+<li>&#x7B2C;&#x4E09;&#x90E8;&#x5206;&#xFF1A;&#x4ECB;&#x7ECD;&#x6807;&#x51C6;&#x5E93;<ul>
+<li>Chapter 7: Input and Output</li>
+<li>Chapter 8: The Unix System Interface</li>
+</ul>
+</li>
+<li>&#x7B2C;&#x56DB;&#x90E8;&#x5206;&#xFF1A;&#x9644;&#x5F55;<ul>
+<li>Appendix A: Reference Manual</li>
+<li>Appendix B: Standard Library</li>
+</ul>
+</li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; williamlfang 2019<br> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-02-21 14:12:32
+2019-02-23 21:10:51
 </span></footer>
                                 
                                 </section>
@@ -520,12 +551,12 @@
 
             
                 
-                <a href="ubuntu.html" class="navigation navigation-prev " aria-label="Previous page: Ubuntu">
+                <a href="why-c.html" class="navigation navigation-prev " aria-label="Previous page: C">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="CentOS7-系统配置.html" class="navigation navigation-next " aria-label="Next page: CentOS7-系统配置">
+                <a href="pointer.html" class="navigation navigation-next " aria-label="Next page: Pointer">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -536,7 +567,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CentOS","level":"3.1.2","depth":2,"next":{"title":"CentOS7-系统配置","level":"3.1.2.1","depth":3,"path":"programming/linux/CentOS7-系统配置.md","ref":"programming/linux/CentOS7-系统配置.md","articles":[]},"previous":{"title":"Ubuntu","level":"3.1.1","depth":2,"path":"programming/linux/ubuntu.md","ref":"programming/linux/ubuntu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","-lunr","-search","search-plus","disqus","-highlight","prism","prism-themes","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","donate","sitemap-general","copy-code-button","callouts","toolbar-button","include-codeblock@^3.0.2","simple-page-toc@^0.1.1"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss","copyright":"Copyright © williamlfang 2019<br>"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"disqus":{"useIdentifier":false,"shortName":"williamlfang"},"callouts":{"showTypeInHeader":false},"toolbar-button":{"label":"PDF","url":"","icon":"fa-file-pdf-o"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://williamlfang.github.io/images/reward/alipay.png","alipayText":"支付宝请客","button":"喝咖啡","title":"","wechat":"https://williamlfang.github.io/images/reward/wechat.png","wechatText":"微信请客"},"sitemap-general":{"prefix":"https://williamlfang.gitbook.io/quant"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"github-buttons":{"buttons":[{"repo":"quant","count":true,"type":"star","user":"williamlfang","size":"small"},{"count":false,"width":"140","type":"follow","user":"williamlfang","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["douban","google","instapaper","line","linkedin","messenger","pocket","qq","viber","whatsapp"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"William Fang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":10,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Survival Guide for Quant","language":"zh-hans","links":{"sidebar":{"主页":"http://williamlfang.github.io"}},"gitbook":"3.2.3","description":"宽客生存指南"},"file":{"path":"programming/linux/centos.md","mtime":"2019-02-21T06:12:32.665Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-23T13:12:03.725Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"K&R","level":"3.2.1","depth":2,"next":{"title":"Pointer","level":"3.2.2","depth":2,"path":"programming/c/pointer.md","ref":"programming/c/pointer.md","articles":[]},"previous":{"title":"C","level":"3.2","depth":1,"path":"programming/c/why-c.md","ref":"programming/c/why-c.md","articles":[{"title":"K&R","level":"3.2.1","depth":2,"path":"programming/c/K&R.md","ref":"programming/c/K&R.md","articles":[]},{"title":"Pointer","level":"3.2.2","depth":2,"path":"programming/c/pointer.md","ref":"programming/c/pointer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-comscore","-lunr","-search","search-plus","disqus","-highlight","prism","prism-themes","github-buttons","splitter","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","donate","sitemap-general","copy-code-button","callouts","toolbar-button","include-codeblock@^3.0.2","simple-page-toc@^0.1.1"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss","copyright":"Copyright © williamlfang 2019<br>"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"disqus":{"useIdentifier":false,"shortName":"williamlfang"},"callouts":{"showTypeInHeader":false},"toolbar-button":{"label":"PDF","url":"","icon":"fa-file-pdf-o"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"https://williamlfang.github.io/images/reward/alipay.png","alipayText":"支付宝请客","button":"喝咖啡","title":"","wechat":"https://williamlfang.github.io/images/reward/wechat.png","wechatText":"微信请客"},"sitemap-general":{"prefix":"https://williamlfang.gitbook.io/quant"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"theme-comscore":{},"prism-themes":{},"github-buttons":{"buttons":[{"repo":"quant","count":true,"type":"star","user":"williamlfang","size":"small"},{"count":false,"width":"140","type":"follow","user":"williamlfang","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["douban","google","instapaper","line","linkedin","messenger","pocket","qq","viber","whatsapp"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"William Fang","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":10,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Survival Guide for Quant","language":"zh-hans","links":{"sidebar":{"主页":"http://williamlfang.github.io"}},"gitbook":"3.2.3","description":"宽客生存指南"},"file":{"path":"programming/c/K&R.md","mtime":"2019-02-23T13:10:51.438Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-23T13:12:03.725Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
